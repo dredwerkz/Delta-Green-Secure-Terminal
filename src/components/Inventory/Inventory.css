@@ -1,0 +1,51 @@
+:root {
+    --inv_background: #21221d;
+    --inv_border: solid 0px var(--terminal_fg);
+    --inv_glow: 0 0 25px 15px var(--terminal_fg);
+    --inv_extendAnim: left 0.5s ease-in-out;
+}
+
+#invContainer {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#inventory {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    background-color: var(--inv_background);
+    border-right: var(--inv_border);
+    box-shadow: var(--inv_glow);
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    transition: var(--inv_extendAnim);
+    text-align: center;
+}
+
+#toggle {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: var(--inv_background);
+    border: var(--inv_border);
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: var(--inv_glow);
+    clip-path: inset(-40px -40px -40px 0px);
+    top: 50vh;
+    width: 2vw;
+    min-width: 25px;
+    height: 5vh;
+    transition: var(--inv_extendAnim);
+}
+
+#toggle img {
+    position: relative;
+    width: 25px;
+    margin: auto;
+    height:100%;
+}

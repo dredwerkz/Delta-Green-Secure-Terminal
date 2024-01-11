@@ -1,18 +1,18 @@
 h1 {
     color: var(--terminal_text);
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .terminal_body {
     font-family: monospace;
     margin: 2vh auto;
-    margin-left: 10vw;
-    margin-right: 5vw;
     /* border: solid 2px red; */
 }
 
 .title {
     text-align: center;
+    padding-left: 20vw;
+    padding-right: 10vw;
     /* border: solid 2px red; */
 }
 
