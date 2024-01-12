@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 
 interface TerminalTitleProps {
-    title: string,
+    title: string;
 }
 
 function TerminalTitle(props: TerminalTitleProps) {
-    
     const defaultTitle: string = props.title;
     const [titleMessage, setTitleMessage] = useState(defaultTitle);
 

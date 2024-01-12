@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'ShadowsIntoLight';
+    src: url('./fonts/ShadowsIntoLight-Regular.ttf');
+}
+
+.photograph {
+    font-family: "ShadowsIntoLight";
+    font-size: 1.2vw;
+    position: relative;
+    width: 70%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1.25;
+    background-image: linear-gradient(to bottom, rgb(171, 171, 171), rgb(255, 255, 255), rgb(184, 184, 184));
+    box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.809);
+    padding: 3%;
+    margin: auto;
+    margin-bottom: 1.5vh;
+    color: black;
+    border-radius: 2px;
+}
+
+.photograph img {
+    position: relative;
+    width: 95%;
+}
+
+.photograph:last-of-type {
+    margin-bottom: auto;
+}
