@@ -1,3 +1,10 @@
 .photos_container {
+    height: 100%;
     margin-top: 4vh;
+    overflow: scroll;
+
+}
+
+.scrollBuffer {
+    padding-bottom: 50%;;
 }
