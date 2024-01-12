@@ -7,55 +7,58 @@
 
 #invContainer {
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #inventory {
     position: absolute;
-    margin: 0;
-    padding: 0;
-    padding-top: 2vh;
-    background-image: url("/images/files_open.png");
-    background-size: auto 1440px;
-    background-position: calc(100% + 15px) calc(50% - 15px);
-    border-right: var(--inv_border);
     /* box-shadow: var(--inv_glow); */
     top: 0;
     width: 25vw;
     min-width: 135px;
     max-width: 720px;
     height: 100vh;
-    transition: var(--inv_extendAnim);
+    padding: 0;
+    padding-top: 2vh;
+    border-right: var(--inv_border);
+    margin: 0;
+    background-image: url("/images/files_open.png");
+    background-position: calc(100% + 15px) calc(50% - 15px);
+    background-size: auto 1440px;
     text-align: center;
+    transition: var(--inv_extendAnim);
 }
 
 #toggle {
-    position: absolute;
-    margin: 0;
+    position: relative;
+    top: 50vh;
+    left: 100%;
+    width: 25px;
+    height: 5vh;
+    min-height: 50px;
     padding: 0;
-    background-color: var(--inv_background);
     border: var(--inv_border);
     border-left: none;
+    margin: 0;
+    background-color: var(--inv_background);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: var(--inv_glow);
     clip-path: inset(-40px -40px -40px 0px);
-    top: 50vh;
-    width: 25px;
-    height: 5vh;
     transition: var(--inv_extendAnim);
 }
 
 #toggle img {
     position: relative;
     width: 25px;
+    height: 100%;
     margin: auto;
-    height:100%;
 }
 
 #invHeader img {
-    margin-top: 5vh;
     width: 90%;
+    margin-top: -3vh;
     transform: rotate(-5deg);
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.8);
 }

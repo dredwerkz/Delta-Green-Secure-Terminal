@@ -1,10 +1,10 @@
-import "./PhotosContainer.css";
+import "./AssetContainer.css";
 import PhotographAsset from "../PhotographAsset/PhotographAsset";
 
-function PhotosContainer() {
+function AssetContainer() {
     return (
         <>
-            <div className="photos_container">
+            <div className="assetContainer">
                 <PhotographAsset />
                 <PhotographAsset />
                 <div className="scrollBuffer"></div>
@@ -13,4 +13,4 @@ function PhotosContainer() {
     );
 }
 
-export default PhotosContainer;
+export default AssetContainer;
