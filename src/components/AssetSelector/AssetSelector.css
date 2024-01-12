@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "SpecialElite";
+    src: url("./fonts/SpecialElite-Regular.ttf");
+}
+
+#assetTabs {
+    font-family: "SpecialElite";
+    font-size: 100%;
+    color: rgb(20, 20, 20);
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    top: 30%;
+    left: -45%;
+    z-index: 10000;
+    transform: rotate(90deg);
+    min-width: 250px;
+}
+
+.tabs {
+    margin-right: 0.1rem;
+    padding: 2%;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(203, 198, 153),
+        rgb(206, 195, 122),
+        rgb(203, 172, 137)
+    );
+    box-shadow: inset 0px 0px 25px 5px rgba(59, 45, 35, 0.907),
+        0px 0px 5px 5px rgba(25, 23, 22, 0.673);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 7vh;
+    min-width: 7vh;
+}
+
+.selected {
+    z-index: 10001;
+    margin-right: -0.8rem;
+    padding: 2%;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(227, 223, 184),
+        rgb(241, 228, 147),
+        rgb(225, 200, 170)
+    );
+    box-shadow: inset 0px 0px 25px 5px rgba(59, 45, 35, 0.907),
+        0px 0px 5px 5px rgba(25, 23, 22, 0.673);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 10vh;
+    min-width: 10vh;
+}
+
+
+#deltaAssets {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(3, 113, 3);
+}
