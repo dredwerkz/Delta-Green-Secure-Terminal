@@ -23,7 +23,7 @@ function Inventory() {
                 invOpen={invOpen}
             />
             <div id="invContainer">
-                <div id="inventory" style={{ left: invOpen ? "0" : "-20vw" }}>
+                <div id="inventory" style={{ left: invOpen ? "0" : "-23vw" }}>
                     <div id="toggle" onClick={handleOpen}>
                         <img
                             src={rightArrow}
