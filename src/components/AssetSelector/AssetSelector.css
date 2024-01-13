@@ -6,16 +6,17 @@
 #assetTabs {
     font-family: "SpecialElite";
     font-size: 100%;
+    text-align:center;
     color: rgb(20, 20, 20);
-    position: relative;
+    position: absolute;
     display: flex;
     padding: 0;
     margin: 0;
-    top: 30%;
-    left: -45%;
+    top: 25%; /* Align the top edge of the div with the top of the screen */
+    left: 0; /* Align the left edge of the div with the left of the screen */
     z-index: 10000;
-    transform: rotate(90deg);
-    min-width: 250px;
+    transform: rotate(90deg) translateY(-100%); /* Rotate and then move up by its own height */
+    transform-origin: top left; /* Set the rotation origin to the top left corner */
 }
 
 .tabs {
@@ -31,8 +32,8 @@
         0px 0px 5px 5px rgba(25, 23, 22, 0.673);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    width: 7vh;
-    min-width: 7vh;
+    width: 5rem;
+    min-width: 5rem;
 }
 
 .selected {
@@ -49,10 +50,9 @@
         0px 0px 5px 5px rgba(25, 23, 22, 0.673);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    width: 10vh;
-    min-width: 10vh;
+    width: 5rem;
+    min-width: 5rem;
 }
-
 
 #deltaAssets {
     font-size: 2rem;

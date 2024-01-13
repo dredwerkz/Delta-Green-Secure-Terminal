@@ -1,0 +1,20 @@
+[
+    {
+        "photos": [
+            {
+                "id": "01",
+                "name": "detective",
+                "imagePath": "./images/people/detective.png",
+                "altText": "A polaroid of the Agent's leader.",
+                "descText": "George Harrison.\nDelta Green veteran agent. Your guiding hand in all this mess."
+            },
+            {
+                "id": "02",
+                "name": "john_doe",
+                "imagePath": "./images/people/john_doe.png",
+                "altText": "A polaroid of the missing man.",
+                "descText": "Unknown.\nWe need to find out who this guy is.."
+            }
+        ]
+    }
+]

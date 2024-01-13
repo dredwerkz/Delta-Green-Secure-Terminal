@@ -1,17 +1,22 @@
-import "./PhotographAsset.css"
+import "./PhotographAsset.css";
 
-function PhotographAsset() {
+interface photoProps {
+    imagePath: string;
+    altText: string;
+    descText: string;
+}
+
+function PhotographAsset({ imagePath, altText, descText }: photoProps) {
     return (
         <>
             <div className="photograph">
-                <img src="./images/generic_man.png" alt="Tim Gerrywood. Known regular at the Food-Stop Chinese Restaurant."/>
-                <div>
-                    Tim Gerrywood<br/>
-                    Known regular at the Food-Stop Chinese Restaurant.
-                </div>
+                <img src={imagePath} alt={altText} />
+                {descText.split("\n").map((line, index) => (
+                    <div key={index}>{line}</div>
+                ))}
             </div>
         </>
     );
 }
 
-export default PhotographAsset
+export default PhotographAsset;

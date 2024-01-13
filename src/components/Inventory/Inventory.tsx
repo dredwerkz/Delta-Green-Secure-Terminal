@@ -17,12 +17,12 @@ function Inventory() {
 
     return (
         <>
+            <AssetSelector
+                selectedAssetType={selectedAssetType}
+                setSelectedAssetType={setSelectedAssetType}
+            />
             <div id="invContainer">
                 <div id="inventory" style={{ left: invOpen ? "0" : "-20vw" }}>
-                    <AssetSelector
-                        selectedAssetType={selectedAssetType}
-                        setSelectedAssetType={setSelectedAssetType}
-                    />
                     <div id="toggle" onClick={handleOpen}>
                         <img
                             src={rightArrow}
@@ -35,7 +35,7 @@ function Inventory() {
                     <div id="invHeader">
                         <img src="./images/inventory_label.jpg" />
                     </div>
-                    <AssetContainer />
+                    <AssetContainer selectedAssetType={selectedAssetType} />
                 </div>
             </div>
         </>
