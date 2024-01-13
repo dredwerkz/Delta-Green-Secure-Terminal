@@ -14,7 +14,7 @@ function AssetContainer({ selectedAssetType }: AssetContainerProps) {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("/database/photos.json");
+                const response = await fetch("/database/assets.json");
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

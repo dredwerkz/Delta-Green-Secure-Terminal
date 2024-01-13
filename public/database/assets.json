@@ -14,6 +14,13 @@
                 "imagePath": "./images/people/john_doe.png",
                 "altText": "A polaroid of the missing man.",
                 "descText": "Unknown.\nWe need to find out who this guy is.."
+            },
+            {
+                "id": "03",
+                "name": "john_doe_burned",
+                "imagePath": "./images/people/john_doe_burnt.png",
+                "altText": "A fire-damaged polaroid of the missing man.",
+                "descText": "Unknown.\nDisturbing."
             }
         ]
     }
