@@ -6,7 +6,7 @@
 #assetTabs {
     font-family: "SpecialElite";
     font-size: 100%;
-    text-align:center;
+    text-align: center;
     color: rgb(20, 20, 20);
     position: absolute;
     display: flex;
@@ -17,6 +17,7 @@
     z-index: 10000;
     transform: rotate(90deg) translateY(-100%); /* Rotate and then move up by its own height */
     transform-origin: top left; /* Set the rotation origin to the top left corner */
+    transition: var(--inv_extendAnim);
 }
 
 .tabs {

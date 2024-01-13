@@ -4,11 +4,13 @@ import "./AssetSelector.css";
 interface AssetSelectorProps {
     selectedAssetType: AssetTypes;
     setSelectedAssetType: (type: AssetTypes) => void;
+    invOpen: boolean;
 }
 
 function AssetSelector({
     setSelectedAssetType,
     selectedAssetType,
+    invOpen,
 }: AssetSelectorProps) {
     function handleTabClick(e: React.MouseEvent<HTMLElement>) {
         switch ((e.target as Element).id) {
@@ -37,7 +39,7 @@ function AssetSelector({
 
     return (
         <>
-            <div id="assetTabs">
+            <div id="assetTabs" style={invOpen ? { left: "0" } : { left: "-20vh"}}>
                 <span
                     id="deltaAssets"
                     className={

@@ -20,6 +20,7 @@ function Inventory() {
             <AssetSelector
                 selectedAssetType={selectedAssetType}
                 setSelectedAssetType={setSelectedAssetType}
+                invOpen={invOpen}
             />
             <div id="invContainer">
                 <div id="inventory" style={{ left: invOpen ? "0" : "-20vw" }}>
