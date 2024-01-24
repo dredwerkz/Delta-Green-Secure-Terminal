@@ -50,7 +50,29 @@ So why not make my own?
 
 ## Features
 
-This project is still in early days! In terms of actual features... well there's a cool title to the page and you can open/close the inventory and its tabs!
+In the current development cycle:
+
+### Agent UI:
+
+* Drag & Drop inventory system, able to place and move assets around the page
+
+* Note taking & sharing amongst other users
+
+* Game Controls - rolling pre-set dice configurations and sending the same result to all relevant clients
+
+### Handler UI:
+
+* Uploading & managing images, media and assets
+
+* Adding/Removing assets from Agent inventories
+
+* Managing game-board state (background etc)
+
+### Background Functionality
+
+* WebSocket & SQL handlers for collaborative actions
+
+* User authentication
 
 You can read more about planned features and how I'm going to tackle them below!
 
@@ -90,35 +112,21 @@ Having the discipline to go back and check the solutions I've found to certain p
 
 ## Future Scope and Enhancements
 
-### Agent UI:
+Once the current development cycle is done with, the app's actually in a somewhat usable state -- so priority is to do some testing and get some feedback from players on what the priorities for future scope should be. 
 
-* Drag & Drop inventory system, able to place and move assets around the page
+Current plans for upcoming features are:
 
-* Note taking & sharing amongst other users
+* Character sheet creator (dynamic/presets included)
 
-* Game Controls - rolling pre-set dice configurations and sending the same result to all relevant clients
+* Live chat
 
-* Media playback & containers
-
-### Handler UI:
-
-* Uploading & managing images, media and assets
-
-* Hot-swapping Agents into groups for easy management
-
-* Adding/Removing assets from Agent inventories
-
-* Managing game-board state (background etc)
-
-### Background Functionality
-
-* WebSocket & SQL handlers for most actions
-
-* User authentication
+* Asset inspection functionality
 
 * Campaign/Session Manager
 
+* Hot-swapping Agents into groups for easy management
 
+* Media playback & containers
 
 ## Contributing
 
