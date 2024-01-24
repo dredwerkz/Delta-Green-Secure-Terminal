@@ -2,7 +2,7 @@
 
 ![Animated gif of text saying "Login Successful: Welcome Agent", the text randomly scrambles before returning to its original form](https://i.imgur.com/E5xbksF.gif)
 
-## Project Breakdown
+## What is it?
 
 Delta Green Secure Terminal is a passion project designed to be an all-in-one solution for Game Masters (Handlers) and Players (Agents) looking to run sessions of Delta Green, a tabletop role-playing game, over the internet.
 
@@ -23,7 +23,7 @@ So why not make my own?
 
 ## Table of Contents
 
--   [Project Breakdown](#project-breakdown)
+-   [What is it?](#what-is-it)
 -   [Technologies Used](#technologies-used)
 -   [Features](#features)
 -   [Screenshots](#screenshots)
