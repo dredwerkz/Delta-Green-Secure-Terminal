@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import "./AssetContainer.css";
 import PhotographAsset from "../PhotographAsset/PhotographAsset";
-
-import { Photos } from "./InvTypes";
-
-interface AssetContainerProps {
-    selectedAssetType: string;
-}
+import AssetContainerProps from "./AssetContainerProps";
+import Photo from "../../../interfaces/Photo";
 
 function AssetContainer({ selectedAssetType }: AssetContainerProps) {
-    const [photoData, setPhotoData] = useState<Photos[]>();
+    const [photoData, setPhotoData] = useState<Photo[]>();
 
     useEffect(() => {
         async function fetchData() {
@@ -33,7 +29,7 @@ function AssetContainer({ selectedAssetType }: AssetContainerProps) {
             <div className="assetContainer">
                 {photoData &&
                     selectedAssetType === "photographs" &&
-                    photoData.map((asset: Photos, i: number) => {
+                    photoData.map((asset: Photo, i: number) => {
                         return (
                             <PhotographAsset
                                 key={`photograph_` + i}

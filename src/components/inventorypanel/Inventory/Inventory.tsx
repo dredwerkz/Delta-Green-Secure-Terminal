@@ -3,8 +3,7 @@ import rightArrow from "./right-arrow.svg";
 import "./Inventory.css";
 import AssetContainer from "../AssetContainer/AssetContainer";
 import AssetSelector from "../AssetSelector/AssetSelector";
-
-export type AssetTypes = "photographs" | "delta" | "VHS" | "tape";
+import AssetTypes from "../../../interfaces/AssetTypes";
 
 function Inventory() {
     const [invOpen, setInvOpen] = useState(false);

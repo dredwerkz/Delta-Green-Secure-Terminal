@@ -1,11 +1,5 @@
-import { AssetTypes } from "../Inventory/Inventory";
 import "./AssetSelector.css";
-
-interface AssetSelectorProps {
-    selectedAssetType: AssetTypes;
-    setSelectedAssetType: (type: AssetTypes) => void;
-    invOpen: boolean;
-}
+import AssetSelectorProps from "./AssetSelectorProps";
 
 function AssetSelector({
     setSelectedAssetType,

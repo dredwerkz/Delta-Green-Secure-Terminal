@@ -1,12 +1,7 @@
 import "./PhotographAsset.css";
+import PhotographAssetProps from "./PhotographAssetProps.ts";
 
-interface photoProps {
-    imagePath: string;
-    altText: string;
-    descText: string;
-}
-
-function PhotographAsset({ imagePath, altText, descText }: photoProps) {
+function PhotographAsset({ imagePath, altText, descText }: PhotographAssetProps) {
     return (
         <>
             <div className="photograph">

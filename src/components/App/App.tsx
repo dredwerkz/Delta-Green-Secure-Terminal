@@ -1,6 +1,6 @@
 import "./App.css";
-import Board from "../Board/Board";
-import Inventory from "../Inventory/Inventory";
+import Board from "../gameboard/Board/Board";
+import Inventory from "../inventorypanel/Inventory/Inventory";
 
 function App() {
     document.body.style.overflow = "hidden"
